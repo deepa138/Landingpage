@@ -1,27 +1,25 @@
-import Articles from "./components/Articles";
-import Header from "./components/Header";
-import MidSection from "./components/MidSection";
-import bg from "./images/landing.png"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+// import Header from "./components/Header";
+import Beforehead from "./components/before_header";
+import Navbar from "./components/Navbar";
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
-function App() {
-
-  const styles = {
-    backgroundImage: `url(${bg})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-  }
-
+const App = () => {
   return (
-    <main className=" h-screen w-screen " style={styles} >
-      <Header />
-
-      <div className="w-full xl:max-w-[1250px] mx-auto px-6 " >
-        <MidSection />
-        <Articles />
-      </div>
-    </main>
+    <Router>
+      <Beforehead />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

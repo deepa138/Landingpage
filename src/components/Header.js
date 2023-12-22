@@ -1,19 +1,255 @@
-import { AiOutlineMenu } from 'react-icons/ai';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const MegaMenu = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isHomeMenuOpen1, setHomeMenuOpen1] = useState(false);
+  const [isHomeMenuOpen2, setHomeMenuOpen2] = useState(false);
+  const [isHomeMenuOpen3, setHomeMenuOpen3] = useState(false);
+  const [isHomeMenuOpen4, setHomeMenuOpen4] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+    setHomeMenuOpen1(false);
+    setHomeMenuOpen2(false);
+    setHomeMenuOpen3(false);
+    setHomeMenuOpen4(false);
+  };
+
+  const toggleMenu1 = () => {
+    setHomeMenuOpen1(!isHomeMenuOpen1);
+    setMenuOpen(false);
+    setHomeMenuOpen2(false);
+    setHomeMenuOpen3(false);
+    setHomeMenuOpen4(false);
+  };
+
+  const toggleMenu2 = () => {
+    setHomeMenuOpen2(!isHomeMenuOpen2);
+    setMenuOpen(false);
+    setHomeMenuOpen1(false);
+    setHomeMenuOpen3(false);
+    setHomeMenuOpen4(false);
+  };
+
+  const toggleMenu3 = () => {
+    setHomeMenuOpen3(!isHomeMenuOpen3);
+    setMenuOpen(false);
+    setHomeMenuOpen1(false);
+    setHomeMenuOpen2(false);
+    setHomeMenuOpen4(false);
+  };
+
+  const toggleMenu4 = () => {
+    setHomeMenuOpen4(!isHomeMenuOpen4);
+    setMenuOpen(false);
+    setHomeMenuOpen1(false);
+    setHomeMenuOpen2(false);
+    setHomeMenuOpen3(false);
+  };
+
   return (
-    <div className="h-[4rem] bg-black w-screen text-white flex items-center " > 
-         <div className="w-full xl:max-w-[1250px] mx-auto px-6" >
-            <ul className="hidden w-full lg:flex items-center justify-start space-x-4" >
-                <li className="cursor-pointer font-medium hover:text-gray-300">HOME</li>
-                <li className="cursor-pointer font-medium hover:text-gray-300">ABOIUT US</li>
-                <li className="cursor-pointer font-medium hover:text-gray-300">CONTACT US</li>
-            </ul>
+    <nav>
+      <div className="relative bg-white">
+        <div className="conatiner mx-auto p-4">
+          <div className="grid grid-cols-5 gap-4">
+            <button onClick={toggleMenu} className="text-black text-lg font-bold"><Link to="/">Home</Link> </button>
+            <button onClick={toggleMenu1} className="text-black text-lg font-bold">About</button>
+            <button onClick={toggleMenu2} className="text-black text-lg font-bold">Standards</button>
+            <button onClick={toggleMenu3} className="text-black text-lg font-bold">Training & Events</button>
+            <button onClick={toggleMenu4} className="text-black text-lg font-bold">About</button>
+          </div>
+        </div>
 
-            <AiOutlineMenu size={28} className='lg:hidden' />
-         </div>
-    </div>
-  )
-}
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white text-gray-800">
+            <div className="container mx-auto p-4">
+              <div className="grid grid-cols-4 gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-2"> <Link to="/about">About</Link></h2>
+                  <ul>
+                    <li href="/about">Item 1</li>
+                    <li>Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Category 1</h2>
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Category 1</h2>
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Category 1</h2>
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
-export default Header
+        {isHomeMenuOpen1 && (
+          <div className="absolute top-full left-0 w-full bg-white text-gray-800">
+            <div className="container mx-auto p-4">
+              <div className="grid grid-cols-4 gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 1</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 2</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 3</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 4</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isHomeMenuOpen2 && (
+          <div className="absolute top-full left-0 w-full bg-white text-gray-800">
+            <div className="container mx-auto p-4">
+              <div className="grid grid-cols-4 gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 1</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 1</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 1</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 1</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isHomeMenuOpen3 && (
+          <div className="absolute top-full left-0 w-full bg-white text-gray-800">
+            <div className="container mx-auto p-4">
+              <div className="grid grid-cols-4 gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 3</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 3</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 3</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 3</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isHomeMenuOpen4 && (
+          <div className="absolute top-full left-0 w-full bg-white text-gray-800">
+            <div className="container mx-auto p-4">
+              <div className="grid grid-cols-4 gap-4">
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 4</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 4</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 4</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold mb-2">Home Menu 4</h2>
+                  <ul>
+                    <li>Home Item 1</li>
+                    <li>Home Item 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+      </div>
+    </nav>
+
+  );
+};
+
+export default MegaMenu;
