@@ -50,7 +50,7 @@ const Navbar = () => {
       { label: 'Home style 5', url: '/homeFive' },
     ]},
     { label: 'Department', onClick: (e) => toggleDropdown('services', e), isOpen: dropdowns.services, dropdownItems: [
-      { label: 'Services 01', url: '/services' },
+      { label: 'Services 01', url: '/department' },
       { label: 'Services 02', url: '/servicesTwo' },
       { label: 'Services Details', url: '/servicesDetails' },
     ]},
@@ -78,15 +78,15 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="header-menu-area menu-area4 py-6 px-14  border-t relative">
+    <div className="header-menu-area py-6 px-14  border-t relative">
       <div className="container-fluid">
-        <div className="flex items-center">
-          <div className="header-info flex items-center lg:w-2/12 md:w-full justify-between">
+        <div className="lg:flex items-center">
+          <div className="header-info flex items-center lg:w-2/12 w-full justify-between">
             <div class="logo">
               <a href="/"> <img src={logo} alt="" /></a>
             </div>
           </div>
-          <div className="top-right flex items-center justify-start lg:w-7/12 md:w-full ">
+          <div className="top-right flex items-center justify-start lg:w-7/12 w-full ">
             <div className="header-menu pl-6">
               <nav id="mobile-menu">
                 <ul className='flex items-center justify-start gap-8 text-base	font-semibold'>
@@ -98,7 +98,7 @@ const Navbar = () => {
               </nav>
             </div>
           </div>
-          <div className="top-right flex items-center justify-end lg:w-3/12 md:w-full ">
+          <div className="top-right flex items-center justify-end lg:w-3/12 w-full hidden md:block">
             <a className="primary_btn bg-primary btn-icon py-2 pr-10 pl-2 rounded-full mr-4 flex items-center font-semibold text-xl capitalize" href="/appoinment">
               <FaCirclePlus className='text-5xl text-white mr-10' /><p className='text-white'>Make Appointment </p></a>
           </div>

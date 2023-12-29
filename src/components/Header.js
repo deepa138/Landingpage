@@ -52,7 +52,7 @@ const MegaMenu = () => {
     <nav>
       <div className="relative bg-white">
         <div className="conatiner mx-auto p-4">
-          <div className="grid grid-cols-5 gap-4">
+          <div className="grid lg:grid-cols-5 gap-4">
             <button onClick={toggleMenu} className="text-black text-lg font-bold"><Link to="/">Home</Link> </button>
             <button onClick={toggleMenu1} className="text-black text-lg font-bold">About</button>
             <button onClick={toggleMenu2} className="text-black text-lg font-bold">Standards</button>

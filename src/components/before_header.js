@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa6";
 
 function Beforehead() {
     return (
-        <div className="row top-bar white-bg py-6 px-14 flex text-sm ">
+        <div className="row top-bar white-bg py-6 px-14 flex text-sm hidden md:block">
             <div className="header-info flex items-center lg:w-4/12 md:w-full justify-between">
                 <span className='flex items-center text-gray'><TfiEmail className='text-primary mr-1' /><a href="mailtoo:infomail@medidove.com" >infomail@medidove.com</a></span>
                 <span className='flex items-center text-gray'><MdOutlinePhoneEnabled className='text-primary mr-1' /><a href="mailtoo:infomail@medidove.com" >+87 (676) 6765 764</a></span>

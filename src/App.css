@@ -7,3 +7,40 @@
   background-repeat: no-repeat;
   background-position: top center;
 }
+.titlesecbg {
+  background-image: url(./images/section-back-icon.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.service-box:hover{
+  background-color: #fff;
+    box-shadow: 0 16px 32px 0 rgba(196,203,255,.3);
+}
+.dot-style:before{
+font-size: 0px !important;
+}
+.dot-style{
+  background: gray !important;
+}
+.slick-active .dot-style{
+  background:#ffc600 !important;
+}
+.slick-slider-arrow{
+  background-color: #8fb569 !important;
+  padding: 10px !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 05px;
+}
+button.slick-slider-arrow.slick-prev {
+  left: 90% !important;
+  top: -80px !important;
+}
+button.slick-slider-arrow.slick-next {
+  right: 20px !important;
+  top: -80px !important;
+}
+.slick-slider-arrow:hover{
+  background-color: #e12454 !important;
+}
