@@ -5,9 +5,9 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { SlEnvolope } from "react-icons/sl";
 import { FaRegClone } from "react-icons/fa";
 import { CiFlag1 } from "react-icons/ci";
-import footerthumb1 from '../images/feeds-thumb-1.jpg';
-import logo from '../images/footer-logo-3.png';
-import bgmap from '../images/footer-map.png';
+import footerthumb1 from '../../images/feeds-thumb-1.jpg';
+import logo from '../../images/footer-logo-3.png';
+import bgmap from '../../images/footer-map.png';
 
 const mapbg = {
     backgroundImage: `url(${bgmap})`,

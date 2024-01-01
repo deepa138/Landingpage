@@ -15,11 +15,11 @@ const HiringArea = () => {
         <section className="hiring-area ">
             <div className="hiring-bottom ">
                 <div className="container-fluid flex flex-wrap ">
-                    <div className="lg:w-6/12 md:w-full px-40 py-32">
+                    <div className="md:w-6/12 lg:w-6/12 w-full xl:px-20 lg:px-5 px-5 lg:py-32 py-10 ">
                         <div className="hire-text ">
                             <div className="about-title mb-8">
                                 <h5 className="text-primary font-semibold text-lg">Why Choose Us</h5>
-                                <h1 className="text-6xl font-semibold my-8">Short Story About <br/>MediDove Clinic.</h1>
+                                <h1 className="xl:text-6xl md:text-5xl lg:text-4xl text-4xl font-semibold my-8 ">Short Story About <br/>MediDove Clinic.</h1>
                             </div>
                             <div className="about-text">
                                 <p className="text-base lg:text-lg">
@@ -38,7 +38,7 @@ const HiringArea = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="hire-right-img lg:w-6/12 md:w-full px-20" style={hirethumb}></div>
+                    <div className="hire-right-img md:w-6/12 lg:w-6/12  w-full lg:px-20 px-5" style={hirethumb}></div>
 
                 </div>
             </div>

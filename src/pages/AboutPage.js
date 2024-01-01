@@ -1,10 +1,24 @@
 import React from 'react';
+import Topbanner from '../components/aboutpage/banner'; 
+import TeamMember from '../components/doctorpage/teammember'; 
+import FactSection from '../components/doctorpage/factsection';
+import CounterSection from '../components/doctorpage/countersection';
+import AboutSection from '../components/aboutpage/about';
+import ClientReviewSection  from '../components/aboutpage/TestimonialsSection';
+import AppointmentSection from '../components/aboutpage/appoinment';
+
 
 const AboutPage = () => {
   return (
     <div>
-      <h1>About Page</h1>
-      {/* Add content specific to the about page */}
+        <Topbanner/>
+        <AboutSection/>
+        <CounterSection/>
+        <AppointmentSection/>
+
+        <TeamMember/>
+        <FactSection/>
+        <ClientReviewSection />
     </div>
   );
 };

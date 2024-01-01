@@ -77,15 +77,15 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="pt-16 pb-16 lg:pt-28 lg:pb-16">
-      <div className="container mx-auto lg:px-40">
+    <section className="pt-16 lg:pt-28">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
         <Titlesec {...teamData} />
         <div className="team-member">
         <div className="flex flex-wrap">
           {teamMembers.map((member) => (
             <div key={member.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
               <div className="group/item mb-12">
-                <div className='text-end mr-5 -mb-12'>
+                <div className='sm:text-end text-center sm:mr-5 sm:-mb-12 '>
                   <a className="text-white bg-primary rounded-full text-lg font-semibold py-3 px-5 " href="/doctorDetails">{member.id}</a>
                 </div>
                 <div className="team-thumb mb-6 flex justify-center">

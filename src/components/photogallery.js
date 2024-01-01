@@ -34,22 +34,32 @@ const PhotoGallery = () => {
         slidesToShow: 2,
         slidesToScroll: 2,
         prevArrow: <CustomSliderArrow className="mr-4 mt-4" icon={<FaArrowLeft />} />,
-    nextArrow: <CustomSliderArrow className="mt-4" icon={<FaArrowRight />} />,
+        nextArrow: <CustomSliderArrow className="mt-4" icon={<FaArrowRight />} />,
         customPaging: (i) => (
-            <button
-                className="dot-style focus:outline-none bg-yellow rounded-full w-2 h-2 mx-2"
-                aria-label={`Slide ${i + 1}`}
-            />),
+          <button
+            className="dot-style focus:outline-none bg-yellow rounded-full w-2 h-2 mx-2"
+            aria-label={`Slide ${i + 1}`}
+          />
+        ),
+        responsive: [
+          {
+            breakpoint: 768, // Adjust the breakpoint as needed
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
     };
 
     return (
         <section className="photogallery pt-16 pb-16 lg:pt-28 lg:pb-16">
-            <div className="container mx-auto lg:px-40">
+            <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
                 <div className="row">
                     <div className="lg:w-1/2 md:w-full">
                         <div className="about-title mb-65">
                             <h5 className="text-primary font-semibold text-lg">Photo Gallery</h5>
-                            <h1 className="text-7xl font-semibold my-8">Let’s See Latest Photo Album</h1>
+                            <h1 className="xl:text-6xl md:text-5xl lg:text-4xl text-4xl font-semibold my-8 ">Let’s See Latest Photo Album</h1>
                         </div>
                     </div>
                     <div className="lg:w-1/2"></div>

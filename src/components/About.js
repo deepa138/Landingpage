@@ -16,25 +16,25 @@ const aboutphonebgicon = {
 function App() {
     return (
         <section className="about-area py-36 bg-white">
-            <div className="container mx-auto px-40">
+            <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
                 <div className="flex flex-wrap">
-                    <div className="lg:w-6/12 md:w-full">
-                        <div className="about-thumb ">
+                    <div className="lg:w-6/12">
+                        <div className="about-thumb mx-auto">
                             <img src={aboutthumb} alt="" />
                             <div style={aboutphonebgicon} className="bg-green py-7 px-10 -mt-16 ml-14 w-fit-content z-10 relative">
                                 <a href="#contact" className="text-2xl font-bold text-white" >
                                <span>Call : 012 (963) 15632</span>
                                 </a>
                             </div>
-                            <div className='flex justify-end -mt-62'><img src={overlap} alt="" className="text-left" /></div>
+                            <div className='flex justify-end -mt-40'><img src={overlap} alt="" className="text-left" /></div>
                             
                         </div>
                     </div>
-                    <div className="lg:w-6/12 md:w-full pl-10">
-                        <div className="about-right-side h4about-right mb-30">
+                    <div className="lg:w-6/12 lg:pl-10">
+                        <div className="about-right-side about-right mb-30">
                             <div className="about-title">
                                 <h5 className="text-primary font-semibold text-lg">About Medidove</h5>
-                                <h1 className="text-6xl font-semibold my-8">25+ Years We Provide Services</h1>
+                                <h1 className="xl:text-6xl md:text-5xl lg:text-4xl text-4xl font-semibold my-8">25+ Years We Provide Services</h1>
                             </div>
                             <div className="about-text">
                                 <p className="text-theme mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod temponcididunt ut labore dolore magna aliqua. Ut enim ad minimveniam, quis nos exercitation ullamco laboris nisi ut aliquip</p>

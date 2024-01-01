@@ -14,20 +14,20 @@ const containerStyle = {
 
 function App() {
   return (
-    <div className="banner flex items-center py-60" style={containerStyle}>
-      <div className="container mx-auto">
+    <div className="banner flex items-center md:py-60 py-36" style={containerStyle}>
+      <div className="mx-auto container-fluid md:px-14 px-5">
         <div className="row">
-          <div className="lg:w-8/12 md:w-10/12">
+          <div className="lg:w-8/12 md:w-full text-center lg:text-left">
             <div className="hero-content">
               <div className="">
                 <h1 className="text-white text-7xl font-bold pb-8">Health & Doctor</h1>
-                <p className="text-white pr-80 pb-8">Avoids pleasure itself, because it is pleasure, but because those who do not know how rationally encounter consequences that extremely system weathe.</p>
-                <div className="row pb-8">
-                  <div className="text-white pb-2 flex items-center"><FaRegArrowAltCircleRight className='text-white  mr-4'/><p>Digital Laboratory & Computerized System</p></div>
-                  <div className="text-white pb-2 flex items-center"><FaRegArrowAltCircleRight className='text-white  mr-4' /><p>Digital Laboratory & Computerized System</p></div>
+                <p className="text-white lg:pr-80 pb-8">Avoids pleasure itself, because it is pleasure, but because those who do not know how rationally encounter consequences that extremely system weathe.</p>
+                <div className="row pb-8 ">
+                  <div className="text-white pb-2 flex items-center lg:justify-start justify-center"><FaRegArrowAltCircleRight className='text-white  mr-4'/><p>Digital Laboratory & Computerized System</p></div>
+                  <div className="text-white pb-2 flex items-center lg:justify-start justify-center"><FaRegArrowAltCircleRight className='text-white  mr-4' /><p>Digital Laboratory & Computerized System</p></div>
                 </div>
               </div>
-              <div className="flex items-center hero-btn">
+              <div className="flex items-center lg:justify-start justify-center sm:flex-row flex-col hero-btn gap-5">
                 <a className="primary_btn bg-primary btn-icon py-2 pr-10 pl-2 rounded-full mr-4 flex items-center font-semibold text-xl capitalize" href="/appoinment">  
                 <FaCirclePlus className='text-5xl text-white mr-10'/><p className='text-white'>Learn More </p></a>
 

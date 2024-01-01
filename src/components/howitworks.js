@@ -35,18 +35,18 @@ const HowItWorks = () => {
     ];
   
     return (
-      <section className="pt-16 pb-16 lg:pt-28 lg:pb-16">
-        <div className="container mx-auto lg:px-5">
+      <section className="pt-16 pb-16 lg:pt-28 ">
+        <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
           <Titlesec {...teamData} />
         </div>
-        <div className="container mx-auto lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="col-span-1">
-              <div className="howit-box text-center flex justify-center flex-col items-center mb-10 lg:mb-40 relative">
+              <div className="howit-box text-center flex justify-center flex-col items-center pb-10 relative">
                 <div className="icon mb-5"><img src={step.icon} alt="" /></div>
                 <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
                 <p className="text-gray">{step.description}</p>
-                <img src={step.moveimgicon} alt="" className="move-icon absolute transform -translate-y-1/2 -right-16"></img>
+                <img src={step.moveimgicon} alt="" className="move-icon absolute transform -translate-y-1/2 -right-16 hidden md:block"></img>
               </div>
             </div>
           ))}

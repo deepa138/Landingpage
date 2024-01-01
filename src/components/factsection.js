@@ -18,9 +18,9 @@ const FactSection = () => {
     return (
         <div className="fact bg-greenlight">
             <div className="container-fluid p-0 flex flex-wrap">
-                <div className="lg:w-5/12 md:w-full mx-auto lg:px-20 py-20">
+                <div className="lg:w-6/12 w-full mx-auto lg:px-20 px-5 lg:py-20 py-10">
                     <div className="fact-wrapper">
-                        <div class="grid grid-cols-2 gap-10">
+                        <div class="grid sm:grid-cols-2 grid-cols-1 gap-10">
                             <div>
                                 <div className="facts-single border rounded-xl  text-center mb-30 flex flex-col items-center p-12">
                                     <div className="facts-icon bg-pinklight rounded-full p-5 mb-4">
@@ -68,7 +68,7 @@ const FactSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-7/12 lg:flex items-center flex-row relative justify-center" style={factbgImage}>                        
+                <div className="lg:w-6/12 w-full flex items-center flex-row relative justify-center" style={factbgImage}>                        
                         <div className="facts-thumb">
                             <button className="facts-playicon popup-video">
                                     <img src={playIcon} alt="Play Icon" />
