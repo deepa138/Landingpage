@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="testimonials-area py-20 bg-gray-100">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <TeamSection {...testimonialsSectionData} />
 
         {testimonialsData.map((testimonial) => (

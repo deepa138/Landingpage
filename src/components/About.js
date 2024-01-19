@@ -16,7 +16,7 @@ const aboutphonebgicon = {
 function App() {
     return (
         <section className="about-area py-36 bg-white">
-            <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+            <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
                 <div className="flex flex-wrap">
                     <div className="lg:w-6/12">
                         <div className="about-thumb mx-auto">

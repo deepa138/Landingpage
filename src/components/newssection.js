@@ -85,7 +85,7 @@ const NewsSection = () => {
 
   return (
     <section className="latest-news-area">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5 py-20">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5 py-20">
         <Titlesec {...teamData} />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   {newsData.map((newsItem, index) => (

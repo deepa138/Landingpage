@@ -35,7 +35,7 @@ const TeamSection = () => {
 
   return (
     <section className="team-area py-20">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <div className="md:flex items-center justify-between">
           <div className="md:w-6/12 lg:w-6/12 w-full  px-5 ">
             <div className="py-10 titleleftbg ">

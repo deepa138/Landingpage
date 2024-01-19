@@ -104,12 +104,12 @@ const Departmentsec = () => {
 
   return (
     <section className="pt-16 lg:pt-28">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <Titlesec {...teamData} />
       </div>
       <div className='container-fluid relative pb-20'>
         <span className="services-bg bg-darkgreen absolute bottom-0 left-0 h-72"><img src={servicesoverlaybg} alt="" /></span>
-        <div className='lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-5 '>
+        <div className='lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-5 '>
           <Slider {...settings} className="service-active services_slider">
             {servicesData.map((service, index) => (
               <div key={index} className="service-item">

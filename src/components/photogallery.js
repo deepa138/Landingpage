@@ -54,7 +54,7 @@ const PhotoGallery = () => {
 
     return (
         <section className="photogallery pt-16 pb-16 lg:pt-28 lg:pb-16">
-            <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+            <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
                 <div className="row">
                     <div className="lg:w-1/2 md:w-full">
                         <div className="about-title mb-65">

@@ -78,7 +78,7 @@ const TeamSection = () => {
 
   return (
     <section className="pt-16 lg:pt-28">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <Titlesec {...teamData} />
         <div className="team-member">
         <div className="flex flex-wrap">

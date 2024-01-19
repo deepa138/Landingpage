@@ -42,7 +42,7 @@ const SingleBlogPost = () => {
   return (
     <div>
       <Topbanner />
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <div className="lg:flex">
           <div className="bg-white p-4 lg:w-8/12">
             <img

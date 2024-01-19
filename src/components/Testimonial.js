@@ -46,7 +46,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials py-40" style={testimonialStyle}>
-      <div className="container mx-auto plg:container container-fluid px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5x-40">
+      <div className="container mx-auto plg:container container-fluid px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5x-40">
         <div className="row flex flex-wrap">
           <div className="xl:w-5/12 md:w-full"></div>
           <div className="xl:w-7/12 md:w-full gap-y-4">

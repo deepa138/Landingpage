@@ -34,7 +34,7 @@ const FactSection = () => {
 
   return (
     <section className="fact-area bg-blue py-10" style={mapbg}>
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <div className="lg:flex items-center text-white">
           <div className="lg:w-6/12 w-full mx-auto">
             <div className="section-title ">

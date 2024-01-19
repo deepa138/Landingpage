@@ -15,7 +15,7 @@ const containerStyle = {
 function App() {
   return (
     <div className="banner flex items-center md:py-60 py-36" style={containerStyle}>
-      <div className="mx-auto container-fluid md:px-14 px-5">
+      <div className="mx-auto container-fluid md:px-10 px-5">
         <div className="row">
           <div className="lg:w-8/12 md:w-full text-center lg:text-left">
             <div className="hero-content">

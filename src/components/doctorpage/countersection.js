@@ -34,7 +34,7 @@ const CounterSection = () => {
 
   return (
     <section className="counter-wraper bg-greenlight py-20">
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <div className="sm:flex flex-wrap">
           {counters.map((counter) => (
             <div key={counter.id} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">

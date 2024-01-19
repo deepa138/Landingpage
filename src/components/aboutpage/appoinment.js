@@ -27,7 +27,7 @@ const dynamicData = {
 const AppointmentSection = () => {
   return (
     <section className="appoinment-section py-20" style={appoinmentStyle}>
-      <div className="lg:container container-fluid mx-auto px-5 2xl:px-40 xl:px-14 md:px-14 lg:px-5">
+      <div className="lg:container container-fluid mx-auto px-5 2xl:px-20 xl:px-14 md:px-14 lg:px-5">
         <div className="lg:flex flex-wrap">
           <div className="w-full lg:w-6/12 bg-white">
             <div className="appoinment-box ">
